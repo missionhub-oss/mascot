@@ -1,0 +1,630 @@
+{
+  "schema_version": "1.1",
+  "character": {
+    "id": "missionhub-chan",
+    "name_zh": "MissionHub 娘",
+    "aliases_zh": [
+      "M 娘",
+      "MH 娘"
+    ],
+    "name_en": "MissionHub-chan",
+    "version": "0.1.0-draft",
+    "status": "draft",
+    "license": "Apache-2.0"
+  },
+  "reference": {
+    "filename": "missionhub-chan-reference.png",
+    "path": "reference/missionhub-chan-reference.png",
+    "format": "png",
+    "width": 1122,
+    "height": 1402,
+    "forms": [
+      "standard-full-body",
+      "chibi-full-body"
+    ],
+    "description": "MissionHub 娘官方核心参考图，包含正比正式全身形象与 2 头身 Q 版全身形象。"
+  },
+  "specs": {
+    "aspect_ratio": "1:1",
+    "static": {
+      "directory": "static",
+      "formats": [
+        "png"
+      ],
+      "recommended_pixels": "1024x1024 or 1254x1254",
+      "min_pixels": "512x512"
+    },
+    "animated": {
+      "directory": "animated",
+      "formats": [
+        "gif",
+        "apng",
+        "webp"
+      ],
+      "recommended_pixels": "300x300 to 512x512"
+    }
+  },
+  "categories": [
+    {
+      "id": "agent",
+      "label_zh": "Agent 与大模型开发",
+      "label_en": "Agent & LLM Development"
+    },
+    {
+      "id": "general-dev",
+      "label_zh": "日常开发与工程协作",
+      "label_en": "General Development & Collaboration"
+    },
+    {
+      "id": "linux",
+      "label_zh": "Linux 内核与驱动开发",
+      "label_en": "Linux Kernel & Driver Development"
+    },
+    {
+      "id": "zephyr",
+      "label_zh": "Zephyr RTOS 嵌入式开发",
+      "label_en": "Zephyr RTOS Development"
+    },
+    {
+      "id": "yocto",
+      "label_zh": "Yocto 构建系统",
+      "label_en": "Yocto Project & BitBake"
+    },
+    {
+      "id": "reaction",
+      "label_zh": "通用互动动图",
+      "label_en": "General Reaction Animation"
+    }
+  ],
+  "assets": [
+    {
+      "id": "static-01-deep-thinking",
+      "kind": "static",
+      "series": "v0.1-dev-pack",
+      "index": 1,
+      "category": "agent",
+      "caption": "深度思考中…",
+      "filename": "01-deep-thinking.png",
+      "path": "static/01-deep-thinking.png",
+      "format": "png",
+      "animated": false,
+      "aspect_ratio": "1:1",
+      "width": 1254,
+      "height": 1254,
+      "description": "盘腿赤脚托腮皱眉思考，头顶红色加载圆环。",
+      "tags": [
+        "agent",
+        "thinking",
+        "reasoning",
+        "loading"
+      ]
+    },
+    {
+      "id": "static-02-agent-start",
+      "kind": "static",
+      "series": "v0.1-dev-pack",
+      "index": 2,
+      "category": "agent",
+      "caption": "Agent，启动！",
+      "filename": "02-agent-start.png",
+      "path": "static/02-agent-start.png",
+      "format": "png",
+      "animated": false,
+      "aspect_ratio": "1:1",
+      "width": 1254,
+      "height": 1254,
+      "description": "右手高举剑道竹刀、左手按下发光红色播放按钮元气大喊。",
+      "tags": [
+        "agent",
+        "start",
+        "shinai",
+        "kendo"
+      ]
+    },
+    {
+      "id": "static-03-hallucination",
+      "kind": "static",
+      "series": "v0.1-dev-pack",
+      "index": 3,
+      "category": "agent",
+      "caption": "你又幻觉了",
+      "filename": "03-hallucination.png",
+      "path": "static/03-hallucination.png",
+      "format": "png",
+      "animated": false,
+      "aspect_ratio": "1:1",
+      "width": 1254,
+      "height": 1254,
+      "description": "叉腰半眯眼，右手指着写满乱波浪线与红色大问号的纸页。",
+      "tags": [
+        "agent",
+        "llm",
+        "hallucination",
+        "skeptical"
+      ]
+    },
+    {
+      "id": "static-04-context-lost",
+      "kind": "static",
+      "series": "v0.1-dev-pack",
+      "index": 4,
+      "category": "agent",
+      "caption": "上下文又丢了",
+      "filename": "04-context-lost.png",
+      "path": "static/04-context-lost.png",
+      "format": "png",
+      "animated": false,
+      "aspect_ratio": "1:1",
+      "width": 1254,
+      "height": 1254,
+      "description": "双手抱头豆豆白眼大喊，头顶红色大问号，空白文档页向右侧飞散。",
+      "tags": [
+        "agent",
+        "context",
+        "memory",
+        "panic"
+      ]
+    },
+    {
+      "id": "static-05-tokens-empty",
+      "kind": "static",
+      "series": "v0.1-dev-pack",
+      "index": 5,
+      "category": "agent",
+      "caption": "Token 烧光了",
+      "filename": "05-tokens-empty.png",
+      "path": "static/05-tokens-empty.png",
+      "format": "png",
+      "animated": false,
+      "aspect_ratio": "1:1",
+      "width": 1254,
+      "height": 1254,
+      "description": "跪地大哭，倒拎红色口金零钱包掉出最后一枚星芒硬币与火苗。",
+      "tags": [
+        "agent",
+        "token",
+        "quota",
+        "crying"
+      ]
+    },
+    {
+      "id": "static-06-human-takeover",
+      "kind": "static",
+      "series": "v0.1-dev-pack",
+      "index": 6,
+      "category": "agent",
+      "caption": "还得我来",
+      "filename": "06-human-takeover.png",
+      "path": "static/06-human-takeover.png",
+      "format": "png",
+      "animated": false,
+      "aspect_ratio": "1:1",
+      "width": 1254,
+      "height": 1254,
+      "description": "自信坏笑卷起右袖准备操作报错笔记本，身旁倚着竹刀。",
+      "tags": [
+        "agent",
+        "takeover",
+        "confident",
+        "shinai"
+      ]
+    },
+    {
+      "id": "static-07-works-locally",
+      "kind": "static",
+      "series": "v0.1-dev-pack",
+      "index": 7,
+      "category": "general-dev",
+      "caption": "本地明明能跑",
+      "filename": "07-works-locally.png",
+      "path": "static/07-works-locally.png",
+      "format": "png",
+      "animated": false,
+      "aspect_ratio": "1:1",
+      "width": 1254,
+      "height": 1254,
+      "description": "鼓腮含泪冒青筋，抱着印有白色对勾的黑色笔记本摊手委屈。",
+      "tags": [
+        "dev",
+        "ci",
+        "environment",
+        "works-on-my-machine"
+      ]
+    },
+    {
+      "id": "static-08-bug-away",
+      "kind": "static",
+      "series": "v0.1-dev-pack",
+      "index": 8,
+      "category": "general-dev",
+      "caption": "Bug 退散！",
+      "filename": "08-bug-away.png",
+      "path": "static/08-bug-away.png",
+      "format": "png",
+      "animated": false,
+      "aspect_ratio": "1:1",
+      "width": 1254,
+      "height": 1254,
+      "description": "赤脚扎稳剑道马步，双手紧握竹刀奋力劈出红白剑气击飞小黑甲虫 Bug。",
+      "tags": [
+        "dev",
+        "bug",
+        "debug",
+        "kendo",
+        "shinai"
+      ]
+    },
+    {
+      "id": "static-09-lgtm-merge",
+      "kind": "static",
+      "series": "v0.1-dev-pack",
+      "index": 9,
+      "category": "general-dev",
+      "caption": "LGTM，合了！",
+      "filename": "09-lgtm-merge.png",
+      "path": "static/09-lgtm-merge.png",
+      "format": "png",
+      "animated": false,
+      "aspect_ratio": "1:1",
+      "width": 1254,
+      "height": 1254,
+      "description": "眨眼灿烂大笑，右手高举大红印章用力盖下鲜红对勾印记。",
+      "tags": [
+        "dev",
+        "lgtm",
+        "pr",
+        "merge",
+        "review"
+      ]
+    },
+    {
+      "id": "static-10-dont-touch",
+      "kind": "static",
+      "series": "v0.1-dev-pack",
+      "index": 10,
+      "category": "general-dev",
+      "caption": "别动，能跑！",
+      "filename": "10-dont-touch.png",
+      "path": "static/10-dont-touch.png",
+      "format": "png",
+      "animated": false,
+      "aspect_ratio": "1:1",
+      "width": 1254,
+      "height": 1254,
+      "description": "额头流汗赤脚扎马步张开双手拦住镜头，身旁是一摞裂纹花括号代码积木。",
+      "tags": [
+        "dev",
+        "legacy",
+        "freeze",
+        "release"
+      ]
+    },
+    {
+      "id": "static-11-tests-pass",
+      "kind": "static",
+      "series": "v0.1-dev-pack",
+      "index": 11,
+      "category": "general-dev",
+      "caption": "测试全绿！",
+      "filename": "11-tests-pass.png",
+      "path": "static/11-tests-pass.png",
+      "format": "png",
+      "animated": false,
+      "aspect_ratio": "1:1",
+      "width": 1254,
+      "height": 1254,
+      "description": "弯眼欢呼赤脚腾空跃起双拳高举，身旁笔记本屏幕亮着三个绿色对勾。",
+      "tags": [
+        "dev",
+        "tests",
+        "ci",
+        "pass",
+        "celebrate"
+      ]
+    },
+    {
+      "id": "static-12-kernel-panic",
+      "kind": "static",
+      "series": "v0.1-dev-pack",
+      "index": 12,
+      "category": "linux",
+      "caption": "Kernel Panic！",
+      "filename": "12-kernel-panic.png",
+      "path": "static/12-kernel-panic.png",
+      "format": "png",
+      "animated": false,
+      "aspect_ratio": "1:1",
+      "width": 1254,
+      "height": 1254,
+      "description": "双手抱头惊恐尖叫，终端报错 kernel panic，桌角 Q 版 Tux 小企鹅冒冷汗。",
+      "tags": [
+        "linux",
+        "kernel",
+        "panic",
+        "tux"
+      ],
+      "third_party_references": [
+        "Linux Tux"
+      ]
+    },
+    {
+      "id": "static-13-read-dmesg",
+      "kind": "static",
+      "series": "v0.1-dev-pack",
+      "index": 13,
+      "category": "linux",
+      "caption": "先看 dmesg",
+      "filename": "13-read-dmesg.png",
+      "path": "static/13-read-dmesg.png",
+      "format": "png",
+      "animated": false,
+      "aspect_ratio": "1:1",
+      "width": 1254,
+      "height": 1254,
+      "description": "戴圆框细边眼镜、托下巴举着金框放大镜审视贴有 Tux 企鹅贴纸的终端窗口。",
+      "tags": [
+        "linux",
+        "dmesg",
+        "logs",
+        "debug",
+        "glasses"
+      ],
+      "third_party_references": [
+        "Linux Tux"
+      ]
+    },
+    {
+      "id": "static-14-driver-start",
+      "kind": "static",
+      "series": "v0.1-dev-pack",
+      "index": 14,
+      "category": "linux",
+      "caption": "驱动，给我起！",
+      "filename": "14-driver-start.png",
+      "path": "static/14-driver-start.png",
+      "format": "png",
+      "animated": false,
+      "aspect_ratio": "1:1",
+      "width": 1254,
+      "height": 1254,
+      "description": "咬牙用力双手握紧电缆插头按向红黑硬件开发板，一旁 Tux 笔记本冒出红色电源图标。",
+      "tags": [
+        "linux",
+        "driver",
+        "bringup",
+        "hardware"
+      ],
+      "third_party_references": [
+        "Linux Tux"
+      ]
+    },
+    {
+      "id": "static-15-dts-trouble",
+      "kind": "static",
+      "series": "v0.1-dev-pack",
+      "index": 15,
+      "category": "zephyr",
+      "caption": "又卡在 DTS",
+      "filename": "15-dts-trouble.png",
+      "path": "static/15-dts-trouble.png",
+      "format": "png",
+      "animated": false,
+      "aspect_ratio": "1:1",
+      "width": 1254,
+      "height": 1254,
+      "description": "双眼转红白蚊香圈、揪着马尾崩溃抓狂，左侧设备树层级图冒出红叉，身前为 Zephyr 笔记本。",
+      "tags": [
+        "zephyr",
+        "dts",
+        "devicetree",
+        "embedded"
+      ],
+      "third_party_references": [
+        "Zephyr"
+      ]
+    },
+    {
+      "id": "static-16-kconfig-off",
+      "kind": "static",
+      "series": "v0.1-dev-pack",
+      "index": 16,
+      "category": "zephyr",
+      "caption": "Kconfig 没开",
+      "filename": "16-kconfig-off.png",
+      "path": "static/16-kconfig-off.png",
+      "format": "png",
+      "animated": false,
+      "aspect_ratio": "1:1",
+      "width": 1254,
+      "height": 1254,
+      "description": "右手捂额懊恼自责，左手食指指向 Zephyr 电路板上处于 OFF 状态的红色拨动开关。",
+      "tags": [
+        "zephyr",
+        "kconfig",
+        "config",
+        "embedded"
+      ],
+      "third_party_references": [
+        "Zephyr"
+      ]
+    },
+    {
+      "id": "static-17-west-build",
+      "kind": "static",
+      "series": "v0.1-dev-pack",
+      "index": 17,
+      "category": "zephyr",
+      "caption": "west build 走起",
+      "filename": "17-west-build.png",
+      "path": "static/17-west-build.png",
+      "format": "png",
+      "animated": false,
+      "aspect_ratio": "1:1",
+      "width": 1254,
+      "height": 1254,
+      "description": "斗志昂扬握拳按下发光红色 Build 按钮，笔记本连线一块红灯点亮的 Zephyr 开发板。",
+      "tags": [
+        "zephyr",
+        "west",
+        "build",
+        "embedded"
+      ],
+      "third_party_references": [
+        "Zephyr"
+      ]
+    },
+    {
+      "id": "static-18-bitbake-wait",
+      "kind": "static",
+      "series": "v0.1-dev-pack",
+      "index": 18,
+      "category": "yocto",
+      "caption": "BitBake 还在烤",
+      "filename": "18-bitbake-wait.png",
+      "path": "static/18-bitbake-wait.png",
+      "format": "png",
+      "animated": false,
+      "aspect_ratio": "1:1",
+      "width": 1254,
+      "height": 1254,
+      "description": "右手托腮半睁疲惫双眼放空等待，身前 Yocto 迷你烤箱正烤着芯片图案吐司，墙挂红色圆钟。",
+      "tags": [
+        "yocto",
+        "bitbake",
+        "build",
+        "waiting"
+      ],
+      "third_party_references": [
+        "Yocto"
+      ]
+    },
+    {
+      "id": "static-19-cache-gone",
+      "kind": "static",
+      "series": "v0.1-dev-pack",
+      "index": 19,
+      "category": "yocto",
+      "caption": "缓存没了",
+      "filename": "19-cache-gone.png",
+      "path": "static/19-cache-gone.png",
+      "format": "png",
+      "animated": false,
+      "aspect_ratio": "1:1",
+      "width": 1254,
+      "height": 1254,
+      "description": "双手撑地跪趴崩溃痛哭，身旁敞开的 Yocto 黑色工具箱空空如也冒出灰烟，上方悬着红色双箭头。",
+      "tags": [
+        "yocto",
+        "sstate-cache",
+        "cache",
+        "crying"
+      ],
+      "third_party_references": [
+        "Yocto"
+      ]
+    },
+    {
+      "id": "static-20-one-line-rebuild",
+      "kind": "static",
+      "series": "v0.1-dev-pack",
+      "index": 20,
+      "category": "yocto",
+      "caption": "改一行，编一天",
+      "filename": "20-one-line-rebuild.png",
+      "path": "static/20-one-line-rebuild.png",
+      "format": "png",
+      "animated": false,
+      "aspect_ratio": "1:1",
+      "width": 1254,
+      "height": 1254,
+      "description": "挂着黑眼圈嘴角流口水趴在贴有 Yocto 小烤箱贴纸的笔记本上，头顶黑旋风与叹气白烟，背后是大圆钟。",
+      "tags": [
+        "yocto",
+        "bitbake",
+        "rebuild",
+        "exhausted"
+      ],
+      "third_party_references": [
+        "Yocto"
+      ]
+    },
+    {
+      "id": "animated-01-clapping",
+      "kind": "animated",
+      "series": "v0.1-dev-pack",
+      "index": 1,
+      "category": "reaction",
+      "caption": "",
+      "filename": "01-clapping.gif",
+      "path": "animated/01-clapping.gif",
+      "format": "gif",
+      "animated": true,
+      "aspect_ratio": "1:1",
+      "width": 362,
+      "height": 362,
+      "frames": 12,
+      "fps": 10,
+      "duration_sec": 1.2,
+      "description": "开心大笑并举起双手轻快鼓掌的无文字循环动图，适用于欢迎、祝贺与里程碑庆祝。",
+      "tags": [
+        "reaction",
+        "clapping",
+        "welcome",
+        "celebrate",
+        "gif"
+      ]
+    },
+    {
+      "id": "animated-02-surprised",
+      "kind": "animated",
+      "series": "v0.1-dev-pack",
+      "index": 2,
+      "category": "reaction",
+      "caption": "",
+      "filename": "02-surprised.gif",
+      "path": "animated/02-surprised.gif",
+      "format": "gif",
+      "animated": true,
+      "aspect_ratio": "1:1",
+      "width": 362,
+      "height": 362,
+      "frames": 12,
+      "fps": 11.1,
+      "duration_sec": 1.08,
+      "description": "双眼亮起金色星芒、头顶冒出双感叹号惊讶张嘴的无文字循环动图，适用于惊喜发现、灵光乍现与惊叹瞬间。",
+      "tags": [
+        "reaction",
+        "surprised",
+        "sparkle",
+        "amazed",
+        "gif"
+      ]
+    },
+    {
+      "id": "animated-03-dazed",
+      "kind": "animated",
+      "series": "v0.1-dev-pack",
+      "index": 3,
+      "category": "reaction",
+      "caption": "",
+      "filename": "03-dazed.gif",
+      "path": "animated/03-dazed.gif",
+      "format": "gif",
+      "animated": true,
+      "aspect_ratio": "1:1",
+      "width": 313,
+      "height": 313,
+      "frames": 16,
+      "fps": 6.7,
+      "duration_sec": 2.4,
+      "description": "半眯红宝石双眸、小嘴微张放空发呆的无文字循环动图，适用于大脑过载、等待编译或愣神放空瞬间。",
+      "tags": [
+        "reaction",
+        "dazed",
+        "blank",
+        "waiting",
+        "gif"
+      ]
+    }
+  ]
+}
