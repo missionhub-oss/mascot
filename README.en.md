@@ -73,6 +73,7 @@ Welcome to the **MissionHub Open Source Community Mascot Repository** (`missionh
       </p>
       <p>
         <a href="characters/missionhub-chan/README.md"><strong>Browse Full Character Gallery (Reference + 20 Static + 3 Animated) →</strong></a> &nbsp;·&nbsp;
+        <a href="characters/missionhub-chan/pets/README.md"><strong>Agent Desktop Pets Pack (20 Frames) →</strong></a> &nbsp;·&nbsp;
         <a href="docs/ip-guide.md">IP Specification</a> &nbsp;·&nbsp;
         <a href="characters/missionhub-chan/community/README.md">Community Derivatives</a>
       </p>

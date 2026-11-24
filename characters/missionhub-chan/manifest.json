@@ -24,6 +24,18 @@
     ],
     "description": "MissionHub 娘官方核心参考图，包含正比正式全身形象与 2 头身 Q 版全身形象。"
   },
+  "pets": {
+    "manifest": "pets/pet.json",
+    "readme": "pets/README.md",
+    "atlas": "pets/atlas/pet-sprites.webp",
+    "frames_dir": "pets/frames",
+    "frame_count": 20,
+    "animations_dir": "pets/animations",
+    "animation_count": 7,
+    "runtime": "pets/runtime/missionhub-pet.mjs",
+    "preview": "pets/runtime/preview.html",
+    "description": "面向 Agent 桌面端的 20 帧全身 Q 版桌面宠物套件（单图集 WebP、20 张透明 PNG 单帧、7 组透明 GIF 与零依赖 ES Module 运行时）。"
+  },
   "specs": {
     "aspect_ratio": "1:1",
     "static": {

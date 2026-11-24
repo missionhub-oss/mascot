@@ -81,6 +81,7 @@
       </p>
       <p>
         <a href="characters/missionhub-chan/README.md"><strong>进入角色图鉴（参考图 + 20 静态 + 3 动态）→</strong></a> &nbsp;·&nbsp;
+        <a href="characters/missionhub-chan/pets/README.md"><strong>Agent 桌面宠物套件（20 帧）→</strong></a> &nbsp;·&nbsp;
         <a href="docs/ip-guide.md">阅读完整设定文档</a> &nbsp;·&nbsp;
         <a href="characters/missionhub-chan/community/README.md">社区二创作品区</a>
       </p>
@@ -177,6 +178,7 @@ flowchart TD
     IP --> REF["reference/（官方角色参考图：正式形象 + Q 版形象）"]
     IP --> S["static/（1:1 静态表情包 · PNG）"]
     IP --> A["animated/（1:1 动态表情包 · GIF / APNG / WebP）"]
+    IP --> P["pets/（Agent 桌面宠物：20 帧图集 / 单帧 / GIF / 运行时）"]
     IP --> F["manifest.json + README.md（元数据与完整图鉴）"]
     IP --> U["community/（社区二创作品投稿区）"]
 ```

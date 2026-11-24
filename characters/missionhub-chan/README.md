@@ -14,6 +14,7 @@
 <p>
   <a href="../../docs/ip-guide.md">IP 设定与设计元素</a> ·
   <a href="../../docs/usage-guidelines.md">使用与二创规范</a> ·
+  <a href="pets/README.md">Agent 桌面宠物（pets）</a> ·
   <a href="manifest.json">manifest.json</a> ·
   <a href="community/README.md">社区二创区</a> ·
   <a href="../../CONTRIBUTING.md">参与贡献</a>
@@ -65,6 +66,7 @@ MissionHub 娘（M 娘 / MH 娘）的原始图形起点是 **MissionHub 社区�
 | [`reference/`](reference/missionhub-chan-reference.png) | 角色标准参考图 | 原画幅 | 1 张 | PNG（8-bit RGB），`1122 × 1402 px`（正式形象 + Q 版形象） |
 | [`static/`](static/) | 静态表情包图 | **1:1** | 20 张 | PNG（8-bit RGB），`1254 × 1254 px` |
 | [`animated/`](animated/) | 动态表情包图 | **1:1** | 3 张 | GIF（GIF89a），`313 × 313 px` / `362 × 362 px` |
+| [`pets/`](pets/README.md) | Agent 桌面宠物套件 | **1:1** | 20 帧 + 7 动图 | 5×4 透明 WebP 图集、20 张 `256 × 256 px` PNG、7 组透明 GIF 与 ES Module 运行时 |
 | [`community/`](community/README.md) | 社区二创作品 | 表情包 **1:1** | 开放投稿 | 遵循 [Apache License 2.0](../../LICENSE) |
 
 ---
