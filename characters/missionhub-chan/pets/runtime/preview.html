@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MissionHub-chan Desktop Pet Preview</title>
+  <style>
+    :root { --bg: #F6F6F4; --fg: #141414; --panel: #FFFFFF; --line: #DADAD6; --red: #E00818; }
+    body.dark { --bg: #111111; --fg: #F3F2ED; --panel: #1C1B19; --line: rgba(255,255,255,0.14); }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif;
+      transition: background-color 200ms, color 200ms;
+    }
+    .panel {
+      max-width: 760px;
+      margin: 36px auto;
+      padding: 24px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-top: 3px solid var(--red);
+      border-radius: 10px;
+    }
+    h1 { margin: 0 0 8px; font-size: 1.35rem; }
+    p { margin: 0 0 18px; opacity: 0.78; font-size: 0.94rem; line-height: 1.6; }
+    .row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+    button {
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: inherit;
+      font: 500 13px/1 inherit;
+      cursor: pointer;
+    }
+    button:hover, button.is-active {
+      background: var(--red);
+      border-color: var(--red);
+      color: #fff;
+    }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; opacity: 0.75; }
+  </style>
+</head>
+<body>
+  <main class="panel">
+    <h1>MissionHub 娘 · Agent 桌面宠物交互预览</h1>
+    <p>点击下方按钮模拟不同 Agent 运行状态，或直接用鼠标点击、摸头、靠近、拖拽抛落页面底部的 MissionHub 娘。</p>
+
+    <div class="row" id="state-controls">
+      <button type="button" data-state="idle" class="is-active">idle（待机）</button>
+      <button type="button" data-state="thinking">thinking（思考中）</button>
+      <button type="button" data-state="working">working（执行中）</button>
+      <button type="button" data-state="tool_call">tool_call（调用工具）</button>
+      <button type="button" data-state="success">success（完成）</button>
+      <button type="button" data-state="error">error（异常）</button>
+      <button type="button" data-state="waiting">waiting（等待确认）</button>
+      <button type="button" data-state="sleeping">sleeping（休眠）</button>
+    </div>
+
+    <div class="row">
+      <button type="button" id="toggle-theme">切换深色 / 浅色背景</button>
+    </div>
+    <code id="status-line">agentState: idle</code>
+  </main>
+
+  <script type="module">
+    import { createMissionHubPet } from './missionhub-pet.mjs';
+
+    const pet = createMissionHubPet(document.body, {
+      atlasUrl: '../atlas/pet-sprites.webp',
+      size: 132,
+      floorOffset: 24,
+    });
+
+    const buttons = [...document.querySelectorAll('[data-state]')];
+    const statusLine = document.getElementById('status-line');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const next = btn.dataset.state;
+        pet.setAgentState(next);
+        buttons.forEach(b => b.classList.toggle('is-active', b === btn));
+        statusLine.textContent = `agentState: ${next}`;
+      });
+    });
+
+    document.getElementById('toggle-theme').addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>
