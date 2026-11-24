@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0",
+  "id": "missionhub-chan-pet",
+  "character_id": "missionhub-chan",
+  "name_zh": "MissionHub 娘（Q 版桌面宠物）",
+  "name_en": "MissionHub-chan Desktop Pet",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "natural_facing": "left",
+  "atlas": {
+    "path": "atlas/pet-sprites.webp",
+    "format": "webp",
+    "width": 1280,
+    "height": 1024,
+    "columns": 5,
+    "rows": 4,
+    "cell_width": 256,
+    "cell_height": 256,
+    "anchor": {
+      "x": 0.5,
+      "y": 0.977
+    }
+  },
+  "frames": [
+    { "id": "idle", "index": 0, "col": 0, "row": 0, "path": "frames/01-idle.png", "description": "Standing upright holding bamboo shinai with bright smile" },
+    { "id": "idle_blink", "index": 1, "col": 1, "row": 0, "path": "frames/02-idle-blink.png", "description": "Standing upright mid-blink with gentle smile" },
+    { "id": "curious", "index": 2, "col": 2, "row": 0, "path": "frames/03-curious.png", "description": "Curious head-tilt peering toward pointer or task" },
+    { "id": "idle_wave", "index": 3, "col": 3, "row": 0, "path": "frames/04-idle-wave.png", "description": "Raising left hand to wave hello warmly" },
+    { "id": "happy", "index": 4, "col": 4, "row": 0, "path": "frames/05-happy.png", "description": "Eyes shut (^ ^) cheering joyfully with raised shinai" },
+    { "id": "happy2", "index": 5, "col": 0, "row": 1, "path": "frames/06-happy2.png", "description": "Secondary joyful celebration bounce frame" },
+    { "id": "walk1", "index": 6, "col": 1, "row": 1, "path": "frames/07-walk1.png", "description": "Walk stride 1: left foot forward, shinai over shoulder" },
+    { "id": "walk_pass1", "index": 7, "col": 2, "row": 1, "path": "frames/08-walk-pass1.png", "description": "Walk stride 2: shinai swinging horizontally downward" },
+    { "id": "walk2", "index": 8, "col": 3, "row": 1, "path": "frames/09-walk2.png", "description": "Walk stride 3: opposite step, shinai swung low forward" },
+    { "id": "walk_pass2", "index": 9, "col": 4, "row": 1, "path": "frames/10-walk-pass2.png", "description": "Walk stride 4: shinai lifting upright for next stride" },
+    { "id": "crouch", "index": 10, "col": 0, "row": 2, "path": "frames/11-crouch.png", "description": "Pre-jump anticipation crouch and landing squash" },
+    { "id": "jump", "index": 11, "col": 1, "row": 2, "path": "frames/12-jump.png", "description": "Mid-air upward leap with raised arms and tucked feet" },
+    { "id": "fall", "index": 12, "col": 2, "row": 2, "path": "frames/13-fall.png", "description": "Mid-air descending pose with billowing hakama and ponytail" },
+    { "id": "swing_windup", "index": 13, "col": 3, "row": 2, "path": "frames/14-swing-windup.png", "description": "Kendo strike phase 1: raising bamboo shinai high overhead" },
+    { "id": "swing", "index": 14, "col": 4, "row": 2, "path": "frames/15-swing.png", "description": "Kendo strike phase 2: two-handed forward bamboo shinai strike" },
+    { "id": "swing_follow", "index": 15, "col": 0, "row": 3, "path": "frames/16-swing-follow.png", "description": "Kendo strike phase 3: low forward lunge follow-through" },
+    { "id": "dangling", "index": 16, "col": 1, "row": 3, "path": "frames/17-dangling.png", "description": "Picked up mid-air with surprised expression and dangling feet" },
+    { "id": "dangling2", "index": 17, "col": 2, "row": 3, "path": "frames/18-dangling2.png", "description": "Picked up mid-air frame 2 with playful sideways foot kick" },
+    { "id": "sleep", "index": 18, "col": 3, "row": 3, "path": "frames/19-sleep.png", "description": "Sitting in seiza with bamboo shinai across lap, eyes closed" },
+    { "id": "sleep2", "index": 19, "col": 4, "row": 3, "path": "frames/20-sleep2.png", "description": "Sitting nap breath frame 2 with gentle head tilt" }
+  ],
+  "animations": {
+    "idle": {
+      "frames": ["idle", "idle_blink", "idle", "idle_blink"],
+      "frame_durations_ms": [1800, 140, 1400, 130],
+      "loop": true,
+      "gif": "animations/idle.gif"
+    },
+    "walk": {
+      "frames": ["walk1", "walk_pass1", "walk2", "walk_pass2"],
+      "frame_durations_ms": [135, 135, 135, 135],
+      "loop": true,
+      "gif": "animations/walk.gif"
+    },
+    "happy": {
+      "frames": ["happy", "idle_wave"],
+      "frame_durations_ms": [240, 240],
+      "loop": true,
+      "gif": "animations/happy.gif"
+    },
+    "strike": {
+      "frames": ["idle", "swing_windup", "swing", "swing_follow"],
+      "frame_durations_ms": [320, 150, 140, 420],
+      "loop": false,
+      "gif": "animations/strike.gif"
+    },
+    "jump": {
+      "frames": ["crouch", "jump", "fall", "crouch", "happy"],
+      "frame_durations_ms": [110, 220, 220, 120, 340],
+      "loop": false,
+      "gif": "animations/jump.gif"
+    },
+    "dangling": {
+      "frames": ["dangling", "dangling2"],
+      "frame_durations_ms": [180, 180],
+      "loop": true,
+      "gif": "animations/dangling.gif"
+    },
+    "sleep": {
+      "frames": ["sleep", "sleep2"],
+      "frame_durations_ms": [1100, 1100],
+      "loop": true,
+      "gif": "animations/sleep.gif"
+    }
+  },
+  "agent_states": {
+    "idle": {
+      "animation": "idle",
+      "description": "Agent is idle; pet stands, blinks naturally, and strolls occasionally"
+    },
+    "thinking": {
+      "frames": ["curious", "idle_blink"],
+      "description": "Agent is reasoning or planning; pet tilts head curiously"
+    },
+    "working": {
+      "animation": "walk",
+      "description": "Agent is actively executing tasks; pet patrols briskly along the floor"
+    },
+    "tool_call": {
+      "animation": "strike",
+      "description": "Agent invokes a tool or command; pet performs a 3-phase kendo shinai strike"
+    },
+    "success": {
+      "animation": "happy",
+      "description": "Task completed cleanly; pet leaps and cheers with sparkles"
+    },
+    "error": {
+      "frames": ["dangling", "swing"],
+      "description": "Tool or run failed; pet does a startled hop into a determined kendo stance"
+    },
+    "waiting": {
+      "frames": ["idle_wave", "idle"],
+      "description": "Waiting for user input or approval; pet waves warmly to catch attention"
+    },
+    "sleeping": {
+      "animation": "sleep",
+      "description": "Session inactive or paused; pet sits peacefully in seiza and naps"
+    }
+  },
+  "runtime": {
+    "web_esm": "runtime/missionhub-pet.mjs",
+    "preview": "runtime/preview.html"
+  }
+}
